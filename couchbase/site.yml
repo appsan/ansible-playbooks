@@ -1,0 +1,10 @@
+---
+# Deploy a standalone Couchbase server in Ubuntu
+
+- hosts: couchbase_servers
+  remote_user: ubuntu
+  sudo: yes
+  roles: 
+  - common
+  - couchbase
+

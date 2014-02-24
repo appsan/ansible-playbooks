@@ -1,0 +1,20 @@
+---
+
+timezone: "Asia/Tokyo"
+hostname: "MyCouchbaseServer"
+
+pkg_src: "http://packages.couchbase.com/releases/2.2.0/couchbase-server-community_2.2.0_x86_64.deb"
+pkg_name: "couchbase-server-community_2.2.0_x86_64.deb"
+user: "Administrator"
+password: "MY_PASSWORD"
+ramsize: "256"
+
+bucket_name: "default"
+
+# or memcached
+bucket_type: "couchbase"
+
+bucket_ramsize: "100"
+bucket_port: "11211"
+
+
