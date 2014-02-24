@@ -27,7 +27,7 @@ $ ansible-playbook -i hosts site.yml --private-key=mysshkey.pem
 Run on single target without source file:
 
 ```
-ansible-playbook -i "example.com," site.yml
+$ ansible-playbook -i "example.com," site.yml
 ```
 
 To ignore SSH host key check, do
