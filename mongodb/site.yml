@@ -1,0 +1,10 @@
+---
+# Deploy a standalone Mongodb server in Ubuntu
+
+- hosts: mongo_servers
+  remote_user: ubuntu
+  sudo: yes
+  roles:  
+  - common
+  - mongod
+

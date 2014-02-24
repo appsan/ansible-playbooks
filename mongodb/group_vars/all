@@ -1,0 +1,7 @@
+---
+
+timezone: "Asia/Tokyo"
+hostname: "MyMongoServer"
+gpg_key_10gen: "http://docs.mongodb.org/10gen-gpg-key.asc"
+mongodb_repo: "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen"
+

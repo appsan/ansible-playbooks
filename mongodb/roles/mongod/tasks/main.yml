@@ -1,0 +1,15 @@
+---
+# Install Mongodb
+
+- apt_key: id=7F0CEB10 url={{ gpg_key_10gen }} state=present
+
+- apt_repository: repo="{{ mongodb_repo }}" state=present
+
+- apt: update_cache=yes
+
+- apt: pkg=mongodb-10gen state=present
+
+- name: Set ulimit
+  copy: src=limits.conf dest=/etc/default/mongodb
+  notify: restart mongodb
+
