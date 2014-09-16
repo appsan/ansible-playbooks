@@ -1,0 +1,8 @@
+---
+
+- hosts: app-server
+  remote_user: ubuntu
+  roles:
+  - git_info
+  - newrelic_event
+

@@ -1,0 +1,10 @@
+---
+
+- newrelic_deployment: 
+    token="{{ api_token }}"
+    app_name="{{ app_name }}"
+    description="{{ description }}"
+    user="{{ author.stdout }}"
+    revision="{{ revision.stdout }}"
+    changelog="{{ message.stdout }}"
+

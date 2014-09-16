@@ -1,0 +1,7 @@
+---
+
+repo_path : '/path/to/myapp'
+api_token : 'my Newrelic API token'
+app_name : 'My App'
+description : 'Newrelic event deployment using Ansible'
+

@@ -1,0 +1,20 @@
+---
+
+- name: get latest git commit revision
+  command: git log -1 --format="%h"
+  args:
+    chdir: "{{ repo_path }}"
+  register: revision
+  
+- name: get latest git commit message
+  command: git log -1 --format="%s"
+  args:
+    chdir: "{{ repo_path }}"
+  register: message
+
+- name: get latest git commit author
+  command: git log -1 --format="%an"
+  args:
+    chdir: "{{ repo_path }}"
+  register: author
+
